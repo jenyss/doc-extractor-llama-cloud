@@ -7,7 +7,7 @@ If you have any questions or would like to collaborate, feel free to reach out t
 ## How It Works
 1. Loads a field mapping schema from an Excel file.
 2. Dynamically generates a Pydantic schema based on the mapping.
-3. Uses LlamaCloud to extract structured data from a PDF or Excel document.
+3. ❗❗❗ Uses LlamaCloud to extract structured data from a PDF or Excel document. YOU MUST SWAP .XLSX format with .PDF for the service to work with Excel since there is some superficial validation which allows only PDFs but the extractor works in fact great with Excel files as well.
 4. Maps the extracted JSON data to final column names using a second Excel mapping.
 5. Exports the cleaned and transformed data to a ready-to-use Excel template.
 6. Ideal for automating document processing and reducing manual data cleanup.
