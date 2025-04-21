@@ -7,4 +7,6 @@ If you have any questions or would like to collaborate, feel free to reach out t
 ## How It Works
 coming soon...
 
+## How-To
+coming soon...
 
