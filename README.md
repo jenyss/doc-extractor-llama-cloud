@@ -5,7 +5,12 @@ This project is a document extraction and transformation pipeline powered by Lla
 If you have any questions or would like to collaborate, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jenya-stoeva-60477249/). You're more than welcome!
 
 ## How It Works
-coming soon...
+1. Loads a field mapping schema from an Excel file.
+2. Dynamically generates a Pydantic schema based on the mapping.
+Uses LlamaCloud to extract structured data from a PDF document.
+Maps the extracted JSON data to final column names using a second Excel mapping.
+Exports the cleaned and transformed data to a ready-to-use Excel template.
+Ideal for automating document processing and reducing manual data cleanup.
 
 ## How-To
 coming soon....
