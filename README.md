@@ -17,13 +17,13 @@ If you have any questions or would like to collaborate, feel free to reach out t
 2. *Load evironment variables in ```helper.py```*
 3. *Prepare your input files*
 
-You’ll need:
+   You’ll need:
 
-* A mapping Excel file (Mapping_Table.xlsx) that defines the fields to extract.
-  ** Column A: Field name
-  ** Column B: Field description
-  ** Column C: Field type
-* A source PDF (CatalogueSept2024.pdf) that contains the unstructured data.
+   * A mapping Excel file (Mapping_Table.xlsx) that defines the fields to extract.
+     ** Column A: Field name
+     ** Column B: Field description
+     ** Column C: Field type
+   * A source PDF (CatalogueSept2024.pdf) that contains the unstructured data.
 
-Put them in a data/ folder (or update the paths as needed).
+   Put them in a data/ folder (or update the paths as needed).
 
