@@ -13,17 +13,27 @@ If you have any questions or would like to collaborate, feel free to reach out t
 6. Ideal for automating document processing and reducing manual data cleanup.
 
 ## How-To
-1. *Install dependencies (at the top of the Notebook).*
-2. *Load evironment variables in ```helper.py```*
-3. *Prepare your input files*
+1. Install dependencies (at the top of the Notebook).
+2. Load evironment variables in ```helper.py```
+3. Prepare your input files. You’ll need:
 
-   You’ll need:
-
-   * A mapping Excel file (Mapping_Table.xlsx) that defines the fields to extract.
-     ** Column A: Field name
-     ** Column B: Field description
-     ** Column C: Field type
-   * A source PDF (CatalogueSept2024.pdf) that contains the unstructured data.
+   * A mapping Excel file (Mapping_Table.xlsx) that defines the fields to extract (extraction schema) and the how these fields will be mapped to the columns in the produced .xlsx file.
+     ** Column A: (Data source) Field name
+     ** Column B: (Data source) Field description
+     ** Column C: (Data source) Field type
+     ** Column D: Default value - to be populated on every row in the produced excel
+     ** Column E: (Data target) Transposed column containing the names of the columna that will be available in the produced excel.
+   * A source PDF (CatalogueSept2024.pdf) that contains the unstructured data. It should contain field names/labels for the extraction to work reliably.
 
    Put them in a data/ folder (or update the paths as needed).
+
+4. Run the tool step by step
+   * Step 1: Generate the schema from Excel. This reads the field definitions and dynamically builds a Pydantic model.
+     ```schema = generate_schema_from_excel("data/Mapping_Table.xlsx")```
+   * Step 2: Extract data from your PDF using LlamaCloud. This extracts structured rows from the document.
+     ```result = extract_data_from_pdf("data/CatalogueSept2024.pdf", schema)```
+   * (Optional) Step 3: Preview and save the raw JSON. Print, if you want to inspect the extracted data.
+     ```print_and_save_json(result, "extracted_data.json")```
+   * Step 4: Map the extracted data to final column names. This step applies the field mapping and outputs a clean Excel file.
+     ```map_and_export_to_excel(result, "data/Mapping_Table.xlsx", "import_template.xlsx")```
 
