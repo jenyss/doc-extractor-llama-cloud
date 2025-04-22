@@ -31,8 +31,7 @@ If you have any questions or would like to collaborate, feel free to reach out t
    * **Step 1:** Generate the schema from Excel. This reads the field definitions and dynamically builds a Pydantic model.<br>
      ```schema = generate_schema_from_excel("data/Mapping_Table.xlsx")```<br>
      
-   * **Step 2:** Extract data from your PDF using LlamaCloud. This extracts structured rows from the document.You MUST swap .xlsx format with .pdf for the service to work with Excel since there is some superficial   
-     validation which allows only PDFs but the extractor works in fact great with Excel files as well.<br>
+   * **Step 2:** Extract data from your PDF using LlamaCloud. This extracts structured rows from the document.You MUST swap .xlsx format with .pdf for the service to work with Excel since there is some superficial   validation which allows only PDFs but the extractor works in fact great with Excel files as well.<br>
      ```result = extract_data_from_pdf("data/CatalogueSept2024.pdf", schema)```<br>
      
    * **(Optional) Step 3:** Preview and save the raw JSON. Print, if you want to inspect the extracted data.<br>
