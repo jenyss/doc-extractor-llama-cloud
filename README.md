@@ -13,5 +13,6 @@ If you have any questions or would like to collaborate, feel free to reach out t
 6. Ideal for automating document processing and reducing manual data cleanup.
 
 ## How-To
-coming soon....
+1. *Install dependencies (at the top of the Notebook).
+2. *Load evironment variables in ```helper.py``` 
 
