@@ -17,13 +17,16 @@ If you have any questions or would like to collaborate, feel free to reach out t
 2. Load evironment variables in ```helper.py```
 3. Prepare your input files. You’ll need:
 
-   * A mapping Excel file (Mapping_Table.xlsx) that defines the fields to extract (extraction schema) and the how these fields will be mapped to the columns in the produced .xlsx file.
+   * A mapping Excel file (Mapping_Table.xlsx) that defines the fields to extract (extraction schema) and how these fields will be mapped to the columns in the produced .xlsx file.
      * Column A: (Data source) Field name
      * Column B: (Data source) Field description
      * Column C: (Data source) Field type
-     * Column D: Default value - to be populated on every row in the produced excel
-     * Column E: (Data target) Transposed column containing the names of the columna that will be available in the produced excel.
-   * A source PDF (CatalogueSept2024.pdf) that contains the unstructured data. It should contain field names/labels for the extraction to work reliably.
+     * Column D: Default value - to be populated on every row in the produced excel. If you don't have default values, leave this column empty.
+     * Column E: (Data target) Transposed column containing the names of the columns that will be available in the produced excel.
+   * A source PDF (CatalogueSept2024.pdf) that contains the unstructured data.
+  
+  Example Data source: TODO
+  Example Mappring_Table.xlsx: TODO
 
    Put them in a data/ folder (or update the paths as needed).
 
