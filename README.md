@@ -25,8 +25,8 @@ If you have any questions or would like to collaborate, feel free to reach out t
      * Column E: (Data target) Transposed column containing the names of the columns that will be available in the produced excel.
    * A source PDF (CatalogueSept2024.pdf) that contains the unstructured data.
   
-  Example Data source: TODO<br>
-  Example Mappring_Table.xlsx: TODO
+  Example: **Data source** TODO<br>
+  Example: **Mappring_Table.xlsx** TODO
 
    Put them in a data/ folder (or update the paths as needed).
 
