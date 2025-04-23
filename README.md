@@ -32,7 +32,7 @@ If you have any questions or would like to collaborate, feel free to reach out t
    * A source PDF (CatalogueSept2024.pdf) that contains the unstructured data.
   
   Example: **Data source** TODO<br>
-  Example: **Mappring_Table.xlsx** ![Mappring_Table.xlsx](data/Mapping_Table.xlsx)
+  Example: **Mappring_Table.xlsx** ![Mappring_Table.xlsx](https://github.com/jenyss/doc-extractor-llama-cloud/blob/main/data/Mapping_Table.xlsx))
 
    Put them in a data/ folder (or update the paths as needed).
 
