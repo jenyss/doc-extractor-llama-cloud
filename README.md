@@ -29,12 +29,10 @@ If you have any questions or would like to collaborate, feel free to reach out t
      * **Column E – Target Column Name (Transposed):**
        The name of the corresponding column that will appear in the generated Excel file. This column represents the transformed output structure.
 
-   * A source PDF (CatalogueSept2024.pdf) that contains the unstructured data.
+   * A source PDF (CatalogueSept2024.pdf) that contains the unstructured data. Put them in a data/ folder (or update the paths as needed).
   
-  Example: [CatalogSept2024.xlsx](https://github.com/jenyss/doc-extractor-llama-cloud/blob/main/data/CatalogSept2024.xlsx)<br>
-  Example: [Mappring_Table.xlsx](https://github.com/jenyss/doc-extractor-llama-cloud/blob/main/data/Mapping_Table.xlsx)
-
-   Put them in a data/ folder (or update the paths as needed).
+      Example: [CatalogSept2024.xlsx](https://github.com/jenyss/doc-extractor-llama-cloud/blob/main/data/CatalogSept2024.xlsx)<br>
+      Example: [Mappring_Table.xlsx](https://github.com/jenyss/doc-extractor-llama-cloud/blob/main/data/Mapping_Table.xlsx)
 
 4. Run the tool step by step
    * **Step 1:** Generate the schema from Excel. This reads the field definitions and dynamically builds a Pydantic model.<br>
