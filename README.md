@@ -19,11 +19,11 @@ If you have any questions or would like to collaborate, feel free to reach out t
 
    * A mapping Excel file (Mapping_Table.xlsx) that defines the fields to extract (extraction schema) and how these fields will be mapped to the columns in the produced .xlsx file.
      * **Column A – Source Field Name:**
-       The exact name of the field from the data source.
+       The name of the field from the data source. 
      * **Column B – Source Field Description:**
        A brief description of what the field represents in the data source.
      * **Column C – Source Field Type:**
-       The data type of the field (e.g., string, integer, date).
+       The data type of the field (e.g., str, float, dict, list, etc).
      * **Column D – Default Value:**
        A default value to populate for every row in the resulting Excel file. Leave blank if not applicable.
      * **Column E – Target Column Name (Transposed):**
