@@ -5,12 +5,11 @@ This project is a document extraction and transformation pipeline powered by Lla
 If you have any questions or would like to collaborate, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jenya-stoeva-60477249/). You're more than welcome!
 
 ## How It Works
-1. Loads a field mapping schema from an Excel file.
+1. Loads a field mapping schema from an Excel file. See [Mappring_Table.xlsx](https://github.com/jenyss/doc-extractor-llama-cloud/blob/main/data/Mapping_Table.xlsx).
 2. Dynamically generates a Pydantic schema based on the mapping.
 3. ❗❗❗ Uses LlamaCloud to extract structured data from a PDF or Excel document. You MUST swap .xlsx format with .pdf for the service to work with Excel since there is some superficial validation which allows only PDFs but the extractor works in fact great with Excel files as well.
-4. Maps the extracted JSON data to final column names using a second Excel mapping.
+4. Maps the extracted JSON data to final column names using the Excel mapping.
 5. Exports the cleaned and transformed data to a ready-to-use Excel template.
-6. Ideal for automating document processing and reducing manual data cleanup.
 
 ## How-To
 1. Install dependencies (at the top of the Notebook).
@@ -29,7 +28,7 @@ If you have any questions or would like to collaborate, feel free to reach out t
      * **Column E – Target Column Name (Transposed):**
        The name of the corresponding column that will appear in the generated Excel file. This column represents the transformed output structure.
 
-   * A source PDF (CatalogueSept2024.pdf) that contains the unstructured data. Put them in a data/ folder (or update the paths as needed).
+   * A source PDF (CatalogueSept2024.pdf) that contains the unstructured data. Put them in a data/ folder (or update the paths in the code as needed).
   
       Example: [CatalogSept2024.xlsx](https://github.com/jenyss/doc-extractor-llama-cloud/blob/main/data/CatalogSept2024.xlsx)<br>
       Example: [Mappring_Table.xlsx](https://github.com/jenyss/doc-extractor-llama-cloud/blob/main/data/Mapping_Table.xlsx)
