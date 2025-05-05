@@ -9,7 +9,7 @@ This project is a document extraction and transformation pipeline powered by Lla
 If you have any questions or would like to collaborate, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jenya-stoeva-60477249/). You're more than welcome!
 
 ## How It Works
-1. Loads a field mapping schema from an Excel file. See [Mappring_Table.xlsx](https://github.com/jenyss/doc-extractor-llama-cloud/blob/main/data/Mapping_Table.xlsx).
+1. Loads a field mapping schema from an Excel file. See [Mapping_Table.xlsx](https://github.com/jenyss/doc-extractor-llama-cloud/blob/main/data/Mapping_Table.xlsx).
 2. Dynamically generates a Pydantic schema based on the mapping.
 3. ❗❗❗ Uses LlamaCloud to extract structured data from a PDF or Excel document. You MUST swap .xlsx format with .pdf for the service to work with Excel since there is some superficial validation which allows only PDFs but the extractor works in fact great with Excel files as well.
 4. Maps the extracted JSON data to final column names using the Excel mapping.
